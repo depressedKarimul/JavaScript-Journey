@@ -1,16 +1,17 @@
 // Task-4:
 // Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
 
-const str = "Example text with X and x";
-const charToCheck = 'x'; 
+
+let str = "Example text with some X and x characters.";
 
 
-const exists = str.toLowerCase().includes(charToCheck.toLowerCase());
-
-if (exists) {
+if (str.includes('x') || str.includes('X')) {
+  console.log("The string contains 'x' or 'X'.");
+  
  
-  const replacedStr = str.replace(new RegExp(charToCheck, 'gi'), 'replacement'); // 'gi' for case-insensitive
-  console.log('Updated string:', replacedStr);
+  let newStr = str.replace(/x/g, '*').replace(/X/g, '*');
+  
+  console.log("Modified string:", newStr);
 } else {
-  console.log('Character not found in the string');
+  console.log("The string does not contain 'x' or 'X'.");
 }
