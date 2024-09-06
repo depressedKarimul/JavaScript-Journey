@@ -1,8 +1,3 @@
-/*
-* array hassoe duplicate elements
-[]
-*
-*/ 
 
 
 
