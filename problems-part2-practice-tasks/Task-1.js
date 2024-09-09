@@ -14,7 +14,7 @@ for(const number of numbers){
 
 return lowest;
 }
-const arr =[167, 190, 120, 165, 137];
-const lowestValue = findTheLowestNumber(arr);
+const heights2 =[167, 190, 120, 165, 137];
+const lowestValue = findTheLowestNumber(heights2);
 
 console.log('lowest number in the array : ',lowestValue);
